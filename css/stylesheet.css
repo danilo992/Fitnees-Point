@@ -36,7 +36,7 @@ h1 img {
     justify-content: flex-end;
     margin: -7% 3% 0 0;
     position: relative;
-    
+    display: none;
 }
 
 /*MENU HAMBUGUER*/
@@ -82,6 +82,14 @@ h1 img {
     color: #FFF;
 
 }
+
+@media screen and (max-width:768px ) {
+    .flex-end {
+        display: block;
+    }
+}
+
+
 
 
 
