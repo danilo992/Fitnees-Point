@@ -4,11 +4,15 @@
 	font-weight: 400;
 	line-height: 26px;
 }
+
+body {
+    background-color: #000 !important;
+}
 /*HEADER*/
 header {
 	height: 120px;
 	width: 100%;
-	background-color: #5e0066b6;
+	background-color: #070607ad;
 	color: #fff;
 	display: flex;
 	position: fixed;
@@ -18,43 +22,44 @@ header {
 }
 
 header h1 {
+	text-transform: uppercase;
+	margin: 0;
+    text-align: center;
     display: flex;
 }
 
 header img {
-    width: 10vw;
-    height: 10vh;
-    margin: 5% 0 0 0;
-    border-radius: 50%
+    width: 20vw;
+    height: 22vh;
+    margin: 0 0 0 0;
+    border-radius: 9%;
+    border: 1px solid rgb(255, 104, 4);
 }
 
-.text-logo {
-    margin: 7% 0 0 13%;
-    color: rgb(255, 104, 4);
-    font-family: unset;
-    font-weight: 900;
-
-}
-
-/*jquery*/
+/*jquery
 .header_fixed {
 	font-size: 0.7em;
 	height: 90px;
-}
-/*FIM-JQUERY*/
+}*/
 
-header h1 {
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0px 40px;
-    text-align: center;
+.container-nav ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    width: 60%;   
+    margin: -5% 0 0 36%; 
+}
+
+.container-nav a {
+    color: rgb(255, 104, 4);
+    font-weight: 900;
+    font-size: 130%;
+    border-left: 1px solid rgb(255, 104, 4);
+    border-right: 1px solid rgb(255, 104, 4);
 }
 
 
 /*FIM HEADER*/
-strong {
-    visibility: hidden;
-}
 .nav {
     position: fixed;
     bottom: 25px;

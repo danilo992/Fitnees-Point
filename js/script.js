@@ -31,7 +31,7 @@ $(document).ready(function() {
     return false;
     });
 
-    $(document).scroll(function(){
+    /*$(document).scroll(function(){
         var topWindow = $(window).scrollTop();
         if(topWindow > 90) {
            $("header").addClass('header_fixed');
@@ -39,7 +39,7 @@ $(document).ready(function() {
            $("header").removeClass('header_fixed');
         };
     });
-});
+});*/
 
 function acao(){
     var submenu = document.getElementById('submenu');
@@ -49,3 +49,4 @@ function acao(){
         submenu.style.display = 'block';
     }
 }
+
