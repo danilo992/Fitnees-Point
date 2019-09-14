@@ -6,19 +6,19 @@
 }
 
 body {
-    background-color: #000 !important;
+    /*background-color: #000 !important;*/
 }
 /*HEADER*/
 header {
-	height: 120px;
+	height: 117px;
 	width: 100%;
 	background-color: #070607ad;
-	color: #fff;
 	display: flex;
 	position: fixed;
 	font-size: 1em;
 	z-index: 1;
-	transition: all .3s;
+    transition: all .3s;
+    border-bottom: 0.5px solid rgb(255, 104, 4);
 }
 
 header h1 {
@@ -32,28 +32,23 @@ header img {
     width: 17%;
     height: 18%;
     margin: 0 0 0 0;
-    border-radius: 9%;
+    border-top-right-radius: 9%;
+    border-bottom-right-radius: 9%;
     border: 1px solid rgb(255, 104, 4);
 }
-
-/*jquery
-.header_fixed {
-	font-size: 0.7em;
-	height: 90px;
-}*/
 
 .container-nav ul{
     display: flex;
     list-style-type: none;
     text-decoration: none;
     width: 60%;   
-    margin: -5% 0 0 36%; 
+    margin: -5% 0 0 30%; 
 }
 
 .container-nav li {
-    border-left: 1px solid rgb(255, 104, 4);
-    border-right: 1px solid rgb(255, 104, 4);
-    padding: 0 1% 0 1%;
+    border-left: 0.3px solid rgb(255, 104, 4);
+    border-right: 0.3px solid rgb(255, 104, 4);
+    padding: 0 0.5% 0 0.5%;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -62,15 +57,17 @@ header img {
 }
 
 .container-nav li:hover {
-    border-left: 1px solid rgb(255, 104, 4);
-    border-right: 1px solid rgb(255, 104, 4);
+    border-left: 0.3px solid rgb(255, 104, 4);
+    border-right: 0.3px solid rgb(255, 104, 4);
     padding: 0 1% 0 1%;
     width: 100%;
     text-align: center;
     justify-content: center;
     margin: -3% 0 0 0;
-    background-color: rgb(94, 5, 121);
+    background-color: rgba(39, 36, 36, 0.568);
     text-decoration: none;
+    border-bottom: 0.5px solid rgba(183, 0, 255, 0.548);
+    border-top: 0.5px solid rgba(183, 0, 255, 0.548);
 }
 
 .container-nav a {
@@ -89,109 +86,38 @@ header img {
 
 .container-nav a:hover {
     text-decoration: none;
-    color: #fff;
+    color: rgba(143, 31, 187, 0.76);
     direction: none;
 }
-
-
 /*FIM HEADER*/
-.nav {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 2;
+
+/*MANI*/
+.carousel-item img {
+    width: 100vw;
+    height: 100vh;
+}
+.carousel-caption h5 {
+    font-weight: 900;
+    font-size: 350%;
+    margin: 10% 0 4% 0;
+    color: rgba(224, 214, 214, 0.815);
+    text-shadow: 4px 4px #000000b0;
 }
 
-nav .menu {
-    background-color: #1b1d19;
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    height: 50px;
-    line-height: 60px;
+.carousel-caption  p {
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 20vw;
     text-align: center;
-    width: 50px;
+    justify-content: center;
 }
 
-.nav-itens {
-    position: absolute;
-    top: -210px;
-    right: 6px;
-    opacity: 0;
-   	transition: all 0.3s;
+strong {
+    color: #0ec518ad;
+    font-size: 150%;
 }
 
-.nav-itens a {
-    background-color: #1b1d19;
-    display: block;
-    margin: 10px 0;
-    color: #fff;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 50px;
-}
 
-.nav-show { 
-    opacity: 1;
-}
 
-main {
-	padding-top: 120px; 
-}
-
-.text_tooltip {
-    background-color: rgb(90, 88, 88);
-    width: 120px;
-    text-decoration: none;
-    padding: 0px 5px;
-    position: absolute;
-    right: 60px;
-    height: 25px;
-    margin-top: 15px;
-    opacity: 0;
-    transition: all .2s;
-}
-
-.text_tooltip:after {
-	content: "";
-    border-top: 0px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid rgb(90, 88, 88);
-    position: absolute;
-    right: -10px;
-    top: 0px;
-}
-
-.section_info {
-	padding: 60px 60px;
-}
-
-.parallax-container {
-	position: relative;
-	overflow: hidden;
-	height: 200px;
-}
-
-.parallax {
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index:-1;
-}
-
-.parallax img {
-	display:none;
-	position:absolute;
-	left:50%;
-	bottom:0;
-	min-width:100%;
-	min-height:100%;
-	transform:translateX(-50%);
-}
 /*
 @media screen and (max-width: 360px) and (min-width:640px) {
 }
