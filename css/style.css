@@ -58,7 +58,6 @@ header img {
 
 .container-nav li:hover {
     border-left: 0.3px solid rgb(255, 104, 4);
-    border-right: 0.3px solid rgb(255, 104, 4);
     padding: 0 1% 0 1%;
     width: 100%;
     text-align: center;
@@ -94,7 +93,7 @@ header img {
 /*MANI*/
 .carousel-item img {
     width: 100vw;
-    height: 100vh;
+    height: 125vh;
 }
 .carousel-caption h5 {
     font-weight: 900;
@@ -116,6 +115,12 @@ strong {
     font-size: 150%;
 }
 
+.visivel-list .ul {
+    margin: 50% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
 
 
 /*
