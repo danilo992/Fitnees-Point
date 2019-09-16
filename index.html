@@ -10,32 +10,35 @@
 </head>
 <body>
   <div class="container-header">
-      <a href="#1"><i class="material-icons">mail</i><P>Fale Conosco</P></a>
-      <a href="#1"><i class="material-icons">face</i><P>Rede Social</P></a>
-      <a href="#1"><i class="material-icons">call</i><P>Liga</P></a>
+      <a href="#1"><i class="material-icons">mail</i><P>E-mail</P></a>
+      <a href="#1"><i class="material-icons">face</i><P>Redes Social</P></a>
+      <a href="#1"><i class="material-icons">call</i><P>Ligar</P></a>
       <a href="#2"><i class="material-icons">room</i><p>Localização</p></a>
+      <button type="button" onclick="funcao1()" value="Econômico" class="btn btn-info">Econômico</button>
         <div id="divBusca">
-          
-          <input type="text" id="txtBusca" placeholder="Buscar..."/>
-          <img src="img/search4.png" alt="Buscar..." id="btnBusca"/>
+          <input type="text" id="txtBusca" placeholder="Bem Vindo ao Fitness Point ;)"/>
+          <img src="img/search4.png" alt="Busca..." id="btnBusca"/>
         </div>
   </div>
+  <!--HEADER-->
     <header>
         <h1>
           <img src="img/logo3.jpeg"  alt="fitness point academia" title="Fitness Point Academia">
         </h1>    
       <nav class="container-nav">
         <ul>
-            <li><a href="#1">Compra</a></li>
-            <li><a href="#1">Plano</a></li>
+            <li><a href="#1">Home</a></li>
+            <li><a href="#1">Planos</a></li>
             <li><a href="#1">Modalidade</a></li>
             <li class="visivel-list"><a href="#1">Horários</a></li>
             <li><a href="#1">Metodologia de Trabalho</a></li>
         </ul>
       </nav>
     </header>
+    <!--FIM-->
+    <!--MAIN-->
     <main>
-        <!--carousel-->
+        <!--CAROUSEL-->
         <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
@@ -81,16 +84,227 @@
                   </a>
                 </div>
               </div>
-              <!--fim carousel-->
-              <section class="container-contato">
-                <div>
-                  <h4>
-
-                  </h4>
-                  
+              <!--FIM CAROUSEL-->
+              <!--SECTION-ENTRA-PLANO 1 -->
+              <section class="section-entra-plano">
+                <h3>
+                  Conheça os Planos de Musculações
+                </h3>
+                <p>
+                  Nosso trabalho é deixa você satisfeito!<br>
+                  Venha fazer parte da nossa Academia
+                </p>
+                <h2>
+                  Fitness Point Academia
+                </h2>
+              </section>
+              <section class="container-planos" id="#planos">
+                <div class="container-plano-mlc">
+                  <h4>Plano</h4>
+                  <h4>Musculação</h4>
+                  <p>3x/semana</p>
+                  <div class="list-plano-mlc">
+                      <ul>
+                        <li><strong>&#x02713;</strong>Horário Livre</li>
+                        <li><strong>&#x02713;</strong>12 Acessos/mês</li>
+                      </ul>
+                  </div>
+                  <div  class="btn-plano-mcl">
+                      <a href="#3">
+                          <button type="button" class="btn btn-success">R$109,00</button>
+                      </a>
+                  </div>
                 </div>
-              </section>   
+                <div class="container-plano-mlc">
+                    <h4>Plano</h4>
+                    <h4>Musculação</h4>
+                    <p>Horário Econômico</p>
+                    <div class="list-plano-mlc">
+                      <ul>
+                        <li><strong>&#x02713;</strong>Das 11:30 - 14:00</li>
+                        <li><strong>&#x02713;</strong>Todos os dias</li>
+                      </ul>
+                    </div>
+                    <div  class="btn-plano-mcl">
+                        <a href="#3">
+                            <button type="button" class="btn btn-success">R$89,00</button>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="container-plano-mlc">
+                      <h4>Plano</h4>
+                      <h4>Musculação</h4>
+                      <p>Mensal</p>
+                      <div class="list-plano-mlc">
+                        <ul>
+                          <li><strong>&#x02713;</strong>Horário Livre</li>
+                          <li><strong>&#x02713;</strong>Todos os dias</li>
+                        </ul>
+                      </div>
+                      <div  class="btn-plano-mcl">
+                          <a href="#3">
+                              <button type="button" class="btn btn-success">R$129,00</button>
+                          </a>
+                      </div>
+                    </div>
+              </section> 
+              <!--FIM SECTION 1 -->
+              <!--SECTION 2 OUTROS PLANOS-->
+              <section class="section-entra-plano">
+                  <h3>
+                    Nossos planos
+                  </h3>
+                  <p>
+                    Trimestral, Semestral e Anual<br>
+                    Tudo que você precisa, a nossa Academia tem!
+                  </p>
+                  <h2>
+                    Tudo para você
+                  </h2>
+                </section>
+                <section class="container-planos" id="#planos">
+                  <div class="container-plano-mlc-1">
+                    <h4>Plano</h4>
+                    <h4>Trimestral</h4>
+                    <p>Fitness Point</p>
+                    <div class="list-plano-mlc">
+                        <ul>
+                          <li><strong>&#x02713;</strong>Horário Livre</li>
+                          <li><strong>&#x02713;</strong>Parcelado em até 3x</li>
+                          <li><strong>&#x02713;</strong>Fidelidade</li>
+                        </ul>
+                    </div>
+                    <div  class="btn-plano-mcl-1">
+                        <a href="#3">
+                            <button type="button" class="btn btn-success">R$327,00</button>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="container-plano-mlc-1">
+                      <h4>Plano</h4>
+                      <h4>Semestral</h4>
+                      <p>Fitness Point</p>
+                      <div class="list-plano-mlc">
+                        <ul>
+                          <li><strong>&#x02713;</strong>Horário Livre</li>
+                          <li><strong>&#x02713;</strong>Parcelado em até 6x</li>
+                          <li><strong>&#x02713;</strong>Fidelidade</li>
+                        </ul>
+                      </div>
+                      <div  class="btn-plano-mcl-1">
+                          <a href="#3">
+                              <button type="button" class="btn btn-success">R$594,00</button>
+                          </a>
+                      </div>
+                    </div>
+                    <div class="container-plano-mlc-1">
+                        <h4>Plano</h4>
+                        <h4>Anual</h4>
+                        <p>Fitness Point</p>
+                        <div class="list-plano-mlc">
+                          <ul>
+                            <li><strong>&#x02713;</strong>Horário Livre</li>
+                            <li><strong>&#x02713;</strong>Parcelado em até 10x</li>
+                            <li><strong>&#x02713;</strong>Fidelidade</li>
+                          </ul>
+                        </div>
+                        <div  class="btn-plano-mcl-1">
+                            <a href="#3">
+                                <button type="button" class="btn btn-success">R$936,00</button>
+                            </a>
+                        </div>
+                      </div>
+                </section> 
+                <!--FIM SECTION 2-->
+                 <!--SECTION 3 OUTROS PLANOS-->
+              <section class="section-entra-plano-3">
+                  <h2>
+                    Venha treinar :)
+                  </h2>
+                </section>
+                <section class="container-planos" id="#planos">
+                  <div class="container-plano-mlc-1">
+                    <h4>Plano</h4>
+                    <h4>Treino Rápido</h4>
+                    <p>Fitness Point</p>
+                    <div class="list-plano-mlc">
+                        <ul>
+                          <li><strong>&#x02713;</strong>Todos os dias</li>
+                          <li><strong>&#x02713;</strong>30 Minutos de duração</li>
+                          <li><strong>&#x02713;</strong>Montagem do Treino</li>
+                        </ul>
+                    </div>
+                    <div  class="btn-plano-mcl-1">
+                        <a href="#3">
+                            <button type="button" class="btn btn-success">R$69,00</button>
+                        </a>
+                    </div>
+                  </div>
+                  <div class="container-plano-mlc-1">
+                      <h4>Plano</h4>
+                      <h4>Smart</h4>
+                      <p>Fitness Point</p>
+                      <div class="list-plano-mlc">
+                        <ul>
+                          <li><strong>&#x02713;</strong>Horário Livre</li>
+                          <li><strong>&#x02713;</strong>Treino Independente<strong>&#8902</strong></li>                         
+                          <li><strong></strong></li>
+                        </ul>
+                      </div>
+                      <div  class="btn-plano-mcl-1">
+                          <a href="#3">
+                              <button type="button" class="btn btn-success">R$69,00</button>
+                          </a>
+                      </div>
+                    </div>
+                    <div class="container-plano-mlc-1">
+                        <h4>Plano</h4>
+                        <h4>Resultado Garantido</h4>
+                        <p>Fitness Point</p>
+                        <div class="list-plano-mlc">
+                          <ul>
+                            <li><strong>&#x02713;</strong>Inclui Avaliação Física</li>
+                            <li><strong>&#x02713;</strong>Treino Personalizado</li>
+                            <li><strong>&#x02713;</strong>Horário Livre</li>
+                          </ul>
+                        </div>
+                        <div  class="btn-plano-mcl-1">
+                            <a href="#3">
+                                <button type="button" class="btn btn-success">R$189,00</button>
+                            </a>
+                        </div>
+                      </div>
+                </section> 
+                <!--FIM SECTION 3--> 
+                <!--section 4-->
+                <section class="container-section-4">
+                   <div class="container-gympass">
+                      <h3>
+                        <strong>&#8902;</strong>  Gympass  <strong>&#8902;</strong> 
+                      </h3>
+                      <a href="https://news.gympass.com/" target="_blank">
+                        <button type="button" class="btn btn-danger">Clique aqui</button>
+                      </a>
+                    </div>
+                    <p>
+                      Aceitamos Gympass<br>
+                      Venha Treinar com a Gente
+                    </p>
+                </section>
+                <!--FIM-->  
+                <section class="container-horario">
+                  
+                </section>   
     </main>
+    <!--FIM MAIN-->
+
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
