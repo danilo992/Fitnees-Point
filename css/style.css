@@ -426,50 +426,7 @@ aside h5 {
 /*fim aside*/
 
 /*footer*/
-.container-footer {
-    background-color: #070607;
-    padding-top: 10px;
-    width: 100vw;
-    display: flex;
-    height: 80vh;
-}
-
-.footer-rd-scl {
-    width: 30vw;
-    display: flex;
-    height: 70vh;
-}
-
-.footer-rd-scl aside {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.footer-rd-scl-2 img {
-    width: 250px;
-    height: 300px !important;
-}
-
-aside figure img{
-    border: 2px solid #FFF;
-    background-color: #FFF;
-    border-radius: 10px 10px;
-    height: 60px;
-   
-}
-
-.footer-img {
-    margin-top: -5px;
-}
-
-.footer-img img {
-    height: 100px !important;
-    width: 250px;
-}
-/*footer*/
-
-    
+.   
 
 
 
