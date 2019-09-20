@@ -279,9 +279,10 @@ strong {
 }
 
 .container-section-4 p {
-    color: hsl(0, 15%, 92%);
+    color: hsl(120, 75%, 48%);
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 15px;
+    margin-top: 15px;
 }
 
 .container-section-4 h3 {
@@ -295,7 +296,136 @@ strong {
 .container-section-4 strong {
     color: hsl(0, 83%, 60%);
 }
+/*FIM SECTION 4*/
 
+/*SECTION HORAS*/
+.container-hr-gn {
+    display: flex;
+    width: 90vw;
+}
+
+.container-ginastica {
+    width: 40vw;   
+}
+
+.container-ginastica h4 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-left: 28px;
+}
+
+.container-ginastica P {
+    width: 20vw;
+    text-align: start;
+    margin-left: 30px;
+    justify-content: baseline;
+    text-align: justify;
+}
+/*horas*/
+.container-horas strong {
+    color: #070607;
+    font-size: 15px;
+}
+
+.container-horas p {
+    border-bottom: 0.4px solid #0000006c;
+}
+
+.container-horas h3 {
+    margin-bottom: 30px;
+}
+
+.material-icone i {
+    font-size: 18px;
+    color: hsl(0, 83%, 60%);
+}
+
+.horas {
+    text-align: start;
+    margin-left: 30px;
+}
+
+#fechado strong {
+    color: hsl(0, 83%, 60%);
+}
+
+.fechado  {
+    margin-left: 66px;
+}
+
+#verde i {
+    color: #53f00b;
+}
+
+.paragrafo {
+    color: #f13319;
+}
+/*FIM SECTION HORS*/
+
+/*container metodologia*/
+.container-metodogia {
+    display: flex;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+article {
+    width: 22vw;
+}
+
+article ul {
+    list-style-type: none;
+    margin-left: -32px;
+}
+
+article h3 {
+    color: #df0433;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+/*fim metodologi*/
+
+/*aside*/
+aside {
+    background-color: #070607;
+    height: 40vh;
+}
+
+aside h5 {
+    text-align: center;
+    color: #FFF;
+    padding-top: 7px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 10px;
+}
+
+.formulario input {
+    margin: 7px;
+}
+
+.formulario button {
+    width: 20vw;
+    margin-left: 190px;
+    color: #f51313;
+}
+/*fim aside*/
+
+/*footer*/
+.container-footer {
+    background-color: #443a3a98;
+    padding-top: 10px;
+}
+
+.footer-rd-scl img {
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    border-radius: 10px 10px;
+}
+/*footer*/
 
     
 

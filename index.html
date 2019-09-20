@@ -27,11 +27,11 @@
         </h1>    
       <nav class="container-nav">
         <ul>
-            <li><a href="#1">Home</a></li>
+            <li><a href="#1">Comprar</a></li>
             <li><a href="#1">Planos</a></li>
             <li><a href="#1">Modalidade</a></li>
             <li class="visivel-list"><a href="#1">Horários</a></li>
-            <li><a href="#1">Metodologia de Trabalho</a></li>
+            <li><a href="#metodologia">Metodologia de Trabalho</a></li>
         </ul>
       </nav>
     </header>
@@ -86,7 +86,7 @@
               </div>
               <!--FIM CAROUSEL-->
               <!--SECTION-ENTRA-PLANO 1 -->
-              <section class="section-entra-plano">
+              <section class="section-entra-plano" id="#planos">
                 <h3>
                   Conheça os Planos de Musculações
                 </h3>
@@ -248,7 +248,6 @@
                         <ul>
                           <li><strong>&#x02713;</strong>Horário Livre</li>
                           <li><strong>&#x02713;</strong>Treino Independente<strong>&#8902</strong></li>                         
-                          <li><strong></strong></li>
                         </ul>
                       </div>
                       <div  class="btn-plano-mcl-1">
@@ -276,6 +275,33 @@
                       </div>
                 </section> 
                 <!--FIM SECTION 3--> 
+                <!--SECTION HORA-->
+                <section class="container-hr-gn">
+                  <section class="container-ginastica">
+                    <h4>Ginástica</h4>
+                      <p>
+                        Não temos aulas de ginática, Somente musculação (dentro da academia).
+                        Oferecemos a possibilidade de uma ou mais pessoas
+                        formarem grupos para aulas de ginástica: treinamneto
+                        funcional, alongamento e Fast Training.
+                      </p>
+                      <p class="paragrafo">
+                        Venha fazer parte de nossa equipe.
+                        Estamos lhe esperando :)
+                      </p>
+                  </section>
+                  <section class="container-horas"> 
+                      <h3>Horário de Funcionamento</h3>
+                        <p id="fechado"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> domindo <strong class="fechado"> Fechado </strong> </p> 
+                        <p id="verde"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> segunda-feira <strong class="horas"> 07:00 - 14:00 / 17:00 - 22:00 </strong> </p> 
+                        <p id="verde"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> terça-feira <strong class="horas"> 07:00 - 14:00 / 17:00 - 22:00  </strong> </p> 
+                        <p id="verde"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> quarta-feira <strong class="horas"> 07:00 - 14:00 / 17:00 - 22:00  </strong> </p> 
+                        <p id="verde"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> quinta-feira <strong class="horas"> 07:00 - 14:00 / 17:00 - 22:00  </strong> </p> 
+                        <p id="verde"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> sexta-feira <strong class="horas"> 07:00 - 14:00 / 17:00 - 22:00  </strong> </p> 
+                        <p id="verde"> <strong class="material-icone">  <i class="material-icons">schedule</i> </strong> sábado <strong class="horas"> 09:00 - 12:00 </strong> </p> 
+                  </section>
+                </section>  
+                <!--FIM HORAS-->
                 <!--section 4-->
                 <section class="container-section-4">
                    <div class="container-gympass">
@@ -292,19 +318,57 @@
                     </p>
                 </section>
                 <!--FIM-->  
-                <section class="container-horario">
-                  
-                </section>   
+                <!--container metodologia-->
+                <section class="container-metodogia" id="metodologia">
+                  <article>
+                    <h3>Visão</h3>
+                    <p>
+                      Ser a academia referência em atendimento e resulatados na prática de
+                      musculação de Florianópolis até 2022.
+                    </p>
+                  </article>
+                  <article>
+                      <h3>Missão</h3>
+                      <p>
+                        Oferecer atendimento personalizado e qualificado aos clientes,
+                        proporcionando um ambiente agradável, descontraído e familiar
+                        com resultados efetivos.
+                      </p>
+                    </article>
+                    <article>
+                        <h3>Valores</h3>
+                          <ul>
+                            <li>Comprometimento;</li>
+                            <li>Respeito</li>
+                            <li>Confiança</li>
+                            <li>Notalidade nos serviços</li>
+                            <li>Satisfação dos clientes.s</li>
+                          </ul>
+                      </article>
+                </section> 
+                <!--fim metodolia-->  
     </main>
     <!--FIM MAIN-->
-
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-
+    <aside>
+      <h5>
+        Envie seu contato para mais informações
+      </h5>
+      <form method="POST" action="#php" class="formulario"> 
+        <input type="text" name="nome" placeholder="Nome Completo">
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="text" name="numero" placeholder="Numero com DDD">
+        <button type="submit">Enviar</button>
+      </form>
+    </aside>
+    <!--footer-->
+    <footer class="container-footer">
+      <div class="footer-rd-scl">
+        <img src="img/facebook_2.png">
+        <img src="img/instagram.png">
+        <img src="img/pin_2.png">
+      </div>
+    </footer>
+    <!--fim-footer-->
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
