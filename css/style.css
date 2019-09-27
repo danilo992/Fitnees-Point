@@ -1,25 +1,26 @@
 * {
-	margin: 0 auto;
+    margin: 0 auto;
+    padding: 0; 
 	font-family: sans-serif;
 	font-weight: 400;
 	line-height: 26px;
 }
-/*CAMPO DE BUSCA*/
+/*CONTAINER HEADER*/
 .container-header {
     display: flex;
     background-color: #000000e0;
-    width: 100%;
+    width: 100vw;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
 }
 
 .container-header p {
-    color: #FFF;
+    color: rgb(145, 135, 135);
     margin: 3px 0 0 8px;
 }
 
 .container-header p:hover {
-    color: #817878e0;
+    color: #615e5e;
     margin: 3px 0 0 8px;
 }
 
@@ -29,7 +30,7 @@
     text-decoration: none !important;
     direction: none;
     list-style-type: none;
-    color: rgba(179, 166, 166, 0.376);
+    color: rgb(145, 135, 135);
 }
 
 .container-header a:hover {
@@ -38,38 +39,21 @@
 
 .container-header i {
     margin-top: 3px;
-    color: #b8adadd8;
+    color: rgb(145, 135, 135);
 }
 
 .container-header i:hover {
     color: #e47114d5;
     direction: none;
 }
-
-#txtBusca {
-    background-color: rgba(80, 78, 75, 0.733);
-    padding-left:5px; 
-    font-size:18px;
-    border: 0.3px solid #e97324ad;
-    height:34px;
-    width:316px;
-    margin: 1% 0 0 0;
-}
-
-#divBusca {
-    margin: 0 0 0 4%;
-}
-
-  /*FIM*/
-
 /*HEADER*/
 header {
-	height: 127px;
-	width: 100%;
+    height: 22vh;
+	width: 100vw;
 	background-color: #070607;
 	display: flex;
 	font-size: 1em;
-    border-bottom: 0.5px solid rgb(255, 104, 4);
+   
 }
 
 header h1 {
@@ -78,21 +62,27 @@ header h1 {
     display: flex;
 }
 
-header img {
-    width: 12%;
-    height: 10%;
+header h1 img {
+    width: 150px;
+    height: 80px;
     margin: 42px 0 0 0;
-    border-top-right-radius: 9%;
-    border-bottom-right-radius: 9%;
+    border-radius: 10px;
     border: 1px solid rgb(255, 104, 4);
+}
+
+.container-nav {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
 }
 
 .container-nav ul{
     display: flex;
     list-style-type: none;
     text-decoration: none;
-    width: 60%;   
-    margin: -5% 0 0 30%; 
+    width: 60vw;   
+    margin: -66px 0 0 0; 
 }
 
 .container-nav li {
@@ -120,7 +110,7 @@ header img {
 }
 
 .container-nav a {
-    color: rgb(240, 231, 226);
+    color: rgb(145, 135, 135);
     font-weight: 900;
     font-size: 130%;
     display: flex;
@@ -138,81 +128,157 @@ header img {
 }
 /*FIM*/
 
-/*MANI*/
-.carousel-item img {
+/*animacao slide*/
+#galeria { 
+    margin: 1px auto;
     width: 100vw;
-    height: 90vh;
-}
-.carousel-caption h5 {
-    font-weight: 900;
-    font-size: 450%;
-    margin: 20px 0 70px 0;
-    color: rgba(226, 89, 21, 0.89);
-    text-shadow: 4px 4px #1a1919b0;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
 }
 
-.carousel-caption  p {
-    background-color: rgba(0, 0, 0, 0.753);
-    width: 20vw;
+#galeria img {
+    width: 100vw;
+}
+
+.foto {
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+
+    25% {
+        
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1){
+    animation-delay: 0s;
+}
+.foto:nth-child(2){
+    animation-delay: 5s;
+}
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+.foto:nth-child(4){
+    animation-delay: 15s;
+}
+.foto:nth-child(5){
+    animation-delay: 20s;
+}
+
+
+/*fim animaçõa slide*/
+
+/*fixed */
+.fixed {
+    background-color: #141414a6;
+    position: absolute;
+    margin: -25% 0 0 32%;
+    width: 40vw;
+    height: 40vh;
     text-align: center;
-    justify-content: center;
+    border: 1px solid #FFF;
+    border-radius: 10px;
 }
 
+.fixed h5 {
+    color: #FFF;
+    font-weight: 900;
+    font-size: 34px;
+    position: absolute;
+    margin: 1% 0 0 28%;
+    line-height: 1.3em;
+}
+.fixed p {
+    color: #FFF;
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    margin: 21% 0 0 0;
+    line-height: 1.5em;
+}
+/*fim fixed*/
+
+/* mian section */
+main {
+    background-color: rgb(19, 18, 18);
+}
 strong {
     color: #0ec518ad;
     font-size: 150%;
 }
 
-/*MAIN SECTION*/
-.section-entra-plano {
-    background-color: rgba(3, 3, 3, 0.952);
+.section-plano {
+    background-color: rgb(3, 3, 3);
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
+    height: 40vh;
+    padding: 30px 50px 70px 50px;
+    width: 100vw;
 }
 
-.section-entra-plano-3 {
-    background-color: rgba(3, 3, 3, 0.952);
-    text-align: center;
-    justify-content: center;
-    text-transform: uppercase;
+p {
+    color: rgb(243, 230, 230);
+    font-weight: 900;
 }
 
-.section-entra-plano h3 {
+
+.section-plano h3 {
     color: #fdfaffe8;
-    font-weight: 900;
+    font-weight: 400;
 }
 
-.section-entra-plano p {
-    color: rgb(255, 255, 255);
+.section-plano h2 {
     font-weight: 900;
+    color: rgb(214, 109, 11);
+    line-height: 2.0em;
 }
 
-.section-entra-plano h2 {
-    font-weight: 900;
-    color: rgb(214, 109, 11)
+.section-plano {
+    background-color: rgba(3, 3, 3, 0.952);
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 100vw;
 }
 
-.section-entra-plano-3 h2 {
+.section-plano-h2 h2 {
     font-weight: 900;
-    color: rgb(214, 109, 11)
+    color: rgb(214, 109, 11);
+    text-align: center;
 }
 
-/*CONTAINER-PLANO*/
+/*container */
 .container-planos {
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
-.container-planos-1 {
+.container-planos {
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
 .container-plano-mlc {
-    border: 0.1px solid #00000054;
+    background-color: rgba(211, 209, 209, 0.795);
+    border-radius: 10px;
+    border: 3px solid #000000;
     width: 25vw;
     height: 47vh;
     text-align: center;
@@ -223,26 +289,8 @@ strong {
     margin-top: 50px;
 }
 
-.container-plano-mlc-1 {
-    border: 0.1px solid #00000054;
-    width: 25vw;
-    height: 55vh;
-    text-align: center;
-    justify-content: center;
-    padding: 5px;
-    margin: 15px;
-    margin-bottom: 120px;
-    margin-top: 50px;
-}
-
 .container-plano-mlc h4 {
-    color: rgb(214, 109, 11);
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-.container-plano-mlc-1 h4 {
-    color: rgb(214, 109, 11);
+    color: rgb(10, 10, 9);
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -250,11 +298,8 @@ strong {
 .container-plano-mlc p {
     border-bottom: 0.4px solid #00000077;
     border-top: 0.4px solid #00000077;
-}
-
-.container-plano-mlc-1 p {
-    border-bottom: 0.4px solid #00000077;
-    border-top: 0.4px solid #00000077;
+    background-color: rgba(48, 156, 53, 0.932);
+    color: #FFF;
 }
 
 .list-plano-mlc ul {
@@ -262,20 +307,17 @@ strong {
     margin: 0 0 0 -50px;
 }
 
-/*BUTTON*/
+/*button container*/
 .btn-plano-mcl {
     margin-top: 10px;
 }
 
-.btn-plano-mcl-1 {
-    margin-top: 20px;
-}
-
-/*SECTION-4 gympass*/
+/*section gympass*/
 .container-section-4 {
     background-color: #070607;
     text-align: center;
     height: 37vh;
+    width: 100vw;
 }
 
 .container-section-4 p {
@@ -296,9 +338,9 @@ strong {
 .container-section-4 strong {
     color: hsl(0, 83%, 60%);
 }
-/*FIM SECTION 4*/
+/*fim secion*/
 
-/*SECTION HORAS*/
+/*section horas e ginastica*/
 .container-hr-gn {
     display: flex;
     width: 90vw;
@@ -312,6 +354,7 @@ strong {
     margin-bottom: 30px;
     font-weight: bold;
     margin-left: 28px;
+    color: #FFF;
 }
 
 .container-ginastica P {
@@ -321,18 +364,20 @@ strong {
     justify-content: baseline;
     text-align: justify;
 }
+
 /*horas*/
+.container-horas, h4 {
+    margin-bottom: 50px;
+    color: #FFF;
+}
+
 .container-horas strong {
-    color: #070607;
+    color: #f1edf1;
     font-size: 15px;
 }
 
 .container-horas p {
-    border-bottom: 0.4px solid #0000006c;
-}
-
-.container-horas h3 {
-    margin-bottom: 30px;
+    border-bottom: 0.4px solid #807a7a6c;
 }
 
 .material-icone i {
@@ -360,13 +405,14 @@ strong {
 .paragrafo {
     color: #f13319;
 }
-/*FIM SECTION HORS*/
+/*fim section horas e ginastica*/
 
 /*container metodologia*/
 .container-metodogia {
     display: flex;
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 40px;
+    padding: 70px;
 }
 
 article {
@@ -374,8 +420,7 @@ article {
 }
 
 article ul {
-    list-style-type: none;
-    margin-left: -32px;
+    color: #FFF;
 }
 
 article h3 {
@@ -385,62 +430,706 @@ article h3 {
 }
 /*fim metodologi*/
 
-/*aside*/
-aside {
-    background-color: #070607;
-    height: 40vh;
+/*formulario php*/
+.container-formulario {
+    padding: 29px;
+    width: 100vw;
 }
 
-aside h5 {
-    text-align: center;
-    color: #FFF;
-    padding-top: 7px;
-}
-.formulario {
+.container-formulario, form {
     display: flex;
     flex-direction: column;
+    background-color: #000;
+    padding-bottom: 10px;
+}
+
+.container-formulario h5, label {
+    font-weight: 900;
+    color: rgb(100, 97, 96);
+}
+
+form {
+    width: 40vw;
+}
+
+input[type=submit] {
+    color: rgba(211, 0, 253, 0.589);
+    background-color: #000;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 220px;
+    font-weight: 900;
+}
+
+input {
+    padding: 5px;
+    border: 0.1px solid rgba(211, 0, 253, 0.589);
+    border-radius: 5px;
+    color: #000;
+}
+/*fim formulario*/
+
+/*footer*/
+footer {
+    display: flex !important;
+    background-color: #000;
+    height: 88vh;
+    width: 100vw;
+    padding-top: 50px;
+    border-top: 1px solid rgba(209, 191, 191, 0.171);
+}
+
+footer p {
+    color: rgb(180, 169, 169);
+}
+
+footer img {
+    background-color: rgb(238, 214, 214);
+    width: 43px;
+    border: 1px solid rgb(226, 222, 222);
+}
+
+aside {
+    width: 10vw;
+}
+
+.footer-aside {
     width: 50vw;
-    padding: 10px;
 }
 
-.formulario input {
-    margin: 7px;
+.footer-aside a {
+    display: flex;
+    justify-content: center;
+    color: #0ec518ad;
+    margin: 0 0 0 -25px;
+    text-decoration: none;
 }
 
-.formulario button {
-    width: 20vw;
-    margin-left: 190px;
-    color: #f51313;
-}
-/*fim aside*/
-
-/*footer*/
-.container-footer {
-    background-color: #443a3a98;
-    padding-top: 10px;
+.footer-aside a:hover {
+    display: flex;
+    justify-content: center;
+    color: #c2c50ea2;
+    margin: 0 0 0 -25px;
+    text-decoration: none;
 }
 
-.footer-rd-scl img {
-    border: 2px solid #FFF;
-    background-color: #FFF;
-    border-radius: 10px 10px;
+.footer-aside img {
+    border-radius: 10px;
 }
-/*footer*/
 
+.pagseguro {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    width: 48vw;
+}
+
+.pagseguro p {
+    width: 21vw;
+}
+
+.pagseguro img {
+    width: 200px;
+    height: 230px;
+    border-radius: 20px;
+}
+
+.endereco {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    color: rgb(180, 169, 169);
+}
+
+/*fim-footer*/
+/*---- @media screen --------------------------*/
+@media screen and (min-width: 100px) and (max-width:558px){
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+/*menu javascript*/
+    #mainMenu {
+        display: none;
+    }
+
+    #mainMenu.toggleCls {
+        display: block;
+    }
+/*fim menu js*/
+
+    .container-header {
+        border-bottom: 1px solid rgba(240, 113, 9, 0.137);
+    }
+
+    .container-header p{
+        font-size: 5px;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    .hamIcon h2 {
+        display: flex;
+        justify-content: flex-end;
+        color: rgb(240, 113, 9);
+        margin-top: -50px;
+        padding: 0 10px 0 0;
+    }
+
+    header h1 img {
+        width: 150px;
+        height: 66px;
+        border: 1px solid rgb(240, 113, 9);
+        border-radius: 10px;
+    }
+
+    .container-nav li {
+        border: none;
+        padding: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container-nav ul {
+        background-color: rgba(10, 10, 10, 0.808);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 40vh;
+        margin-top: 0px;
+        margin-left: 160px;
+        z-index: 1;
+    }
+
+    .imagen-section img {
+        width: 100vw;
+        height: 55vh;
+    }
+    /*fixed*/
+    .fixed {
+        display: none;
+    }
+    /*fim fixed*/
     
 
+    #galeria {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    /*main section*/
+    .section-plano h3 {
+        font-size: 15px;
+        color: rgb(214, 109, 11);
+    }
+
+    .section-plano-h2 h2 {
+        font-size: 10px;
+    }
+    .section-plano h2 {
+        font-size: 10px;
+    }
+
+    .section-plano p {
+        font-size: 10px;
+        line-height: 1.5em;
+    }
+
+    .section-plano {
+        height: 30vh;
+    }
+
+    /*container-plano*/
+    .container-planos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        width: 100vw;
+    }
+
+    .container-plano-mlc {
+        width: 70vw;
+        padding: 0;
+        margin: 10px;
+    }
+
+    .container-plano-mlc-1 {
+        width: 70vw;
+        padding: 0;
+        margin: 10px;
+    }
+
+    /*hooras e ginastica*/
+    .container-hr-gn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-ginastica {
+        width: 80vw;
+        margin-left: -5px;
+    }
+
+    .container-ginastica h4{
+        margin-top: 17px;
+        border-bottom: 1px solid #f13319;
+    }
+
+    .container-ginastica p {
+        width: 70vw;
+    }
+
+    .container-horas {
+        width: 80vw;
+
+    }
+
+    .container-horas strong {
+        font-size: 10px;
+    }
+
+    /*container metodologia*/
+    .container-metodogia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container-metodogia article {
+        width: 90vw;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /*formulario index-php*/
+    .container-formulario {
+        width: 100vw;
+        padding: 0 100px 0 0;
+    }
+
+    .container-formulario h5 {
+        font-size: 13px;
+        padding: 10px 50px 0 70px;
+        width: 100vw;
+
+    }
+
+    .container-formulario input {
+        width: 70vw;
+        padding: 1px;
+
+    }
+
+    .container-formulario label {
+        font-size: 10px;
+    }
+
+    input[type=submit] {
+        position: relative;
+        text-align: center;
+        margin: 9px 0 0 0;
+
+    }
+
+    /*footer*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        height: 150vh;
+        width: 100vw;
+    }
+
+    .list-redes-social {
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100vw;
+        margin-left: 22px;
+    }
+
+    .list-redes-social a {
+        padding: 8px;
+        margin: 2px;
+    }
+
+    .list-redes-social img {
+        padding: 3px;
+        border-radius: 50px;
+        margin: 0;
+    }
+
+    .list-redes-social figcaption {
+        display: none;
+    }
+
+    /*endereço*/
+    .endereco {
+        width: 100vw;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .endereco p {
+        padding:0 20px 0 20px;
+    }
+
+    .footer-aside img {
+        margin-left: 50px;
+    }
+
+    .footer-hrs {
+        border-top: 1px solid #f0e9e83b;
+        padding: 10px;
+        background-color: #000;
+    }
+    /*whatsapp*/
+    .footer-aside {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        
+    }
+
+    .footer-aside img {
+        margin-left: 110px;
+    }
+
+    .footer-aside h5 {
+        font-size: 16px;
+    }
+
+    .pagseguro {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0 0 -15px;
+        background-color: #000;
+    }
+    
+    .pagseguro aside {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagseguro p {
+        display: none;
+    }
+
+    .pagseguro img {
+        width: 60vw;
+        height: 27vh;
+       margin-left: 89px;
+    }
+
+} 
+
+@media screen and (min-width: 560px) and (max-width:720px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #mainMenu {
+        display: none;
+    }
+
+    #mainMenu.toggleCls {
+        display: block;
+    }
+
+    .container-header {
+        border-bottom: 1px solid rgba(240, 113, 9, 0.137);
+    }
+
+    .container-header p{
+        font-size: 5px;
+    }
+
+    header {
+        height: 18vh;
+    }
+
+    .hamIcon h2 {
+        display: flex;
+        justify-content: flex-end;
+        color: rgb(240, 113, 9);
+        margin-top: -50px;
+        padding: 0 10px 0 0;
+    }
+
+    header h1 img {
+        width: 150px;
+        height: 60px;
+        margin: 42px 0 0 0;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 104, 4);
+    }
+
+    .container-nav li {
+        border: none;
+        padding: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container-nav ul {
+        background-color: rgba(10, 10, 10, 0.808);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 50vh;
+        margin-top: 0px;
+        z-index: 1;
+    }
+
+    .imagen-section {
+        width: 100vw;
+        height: 50vh !important;
+    }
+
+    .imagen-section img {
+        width: 100vw;
+        height: 55vh;
+    }
+    /*fixed*/
+    .fixed {
+        display: none;
+    }
+    /*fim fixed*/
+    
+
+    #galeria {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    /*main section*/
+    .section-entra-plano h3 {
+        font-size: 15px;
+        color: rgb(214, 109, 11);
+    }
+
+    .section-entra-plano h2 {
+        font-size: 10px;
+    }
+
+    .section-entra-plano p {
+        font-size: 10px;
+        line-height: 1.5em;
+    }
+
+    .container-planos-img img {
+        width: 60vw;
+        height: 30vh;
+        padding: -10px;
+        margin: -19px;
+    }
+
+    .container-planos-img ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*SECTION 2 OUTROS PLANOS*/
+    .section-entra-plano {
+        height: 25vh;
+    }
+
+    /*container ginastica e horas*/
+    .container-hr-gn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-ginastica {
+        width: 80vw;
+        margin-left: -5px;
+    }
+
+    .container-ginastica h4{
+        margin-top: 17px;
+        border-bottom: 1px solid #f13319;
+    }
+
+    .container-ginastica p {
+        width: 70vw;
+    }
+
+    .container-horas {
+        width: 80vw;
+
+    }
+
+    .container-horas strong {
+        font-size: 10px;
+    }
+
+    /*container metodologia*/
+    .container-metodogia {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container-metodogia article {
+        width: 90vw;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /*formulario index-php*/
+    .container-formulario {
+        width: 100vw;
+        padding: 0 100px 0 0;
+    }
+
+    .container-formulario h5 {
+        font-size: 13px;
+        padding: 10px 50px 0 70px;
+        width: 100vw;
+
+    }
+
+    .container-formulario input {
+        width: 70vw;
+        padding: 1px;
+
+    }
+
+    .container-formulario label {
+        font-size: 10px;
+    }
+
+    input[type=submit] {
+        position: relative;
+        text-align: center;
+        margin: 9px 0 0 0;
+
+    }
+
+    /*footer*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        height: 150vh;
+        width: 100vw;
+    }
+
+    .list-redes-social {
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100vw;
+        margin-left: 22px;
+    }
+
+    .list-redes-social a {
+        padding: 8px;
+        margin: 2px;
+    }
+
+    .list-redes-social img {
+        padding: 3px;
+        border-radius: 50px;
+        margin: 0;
+    }
+
+    .list-redes-social figcaption {
+        display: none;
+    }
+
+    /*endereço*/
+    .endereco {
+        width: 100vw;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .endereco p {
+        padding:0 20px 0 20px;
+    }
+
+    .footer-aside img {
+        margin-left: 50px;
+    }
+
+    .footer-hrs {
+        border-top: 1px solid #f0e9e83b;
+        padding: 10px;
+        background-color: #000;
+    }
+    /*whatsapp*/
+    .footer-aside {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        
+    }
+
+    .footer-aside img {
+        margin-left: 110px;
+    }
+
+    .footer-aside h5 {
+        font-size: 16px;
+    }
+
+    .pagseguro {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0 0 -15px;
+        background-color: #000;
+    }
+    
+    .pagseguro aside {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagseguro p {
+        display: none;
+    }
+
+    .pagseguro img {
+        width: 60vw;
+        height: 27vh;
+       margin-left: 89px;
+    }
+
+} 
 
 
+@media screen and (min-width: 700px) and (max-width:800px) {
+    #mainMenu {
+        display: none;
+    }
 
+    #mainMenu.toggleCls {
+        display: block;
+    }
 
-/*
-@media screen and (max-width: 360px) and (min-width:640px) {
+    .fixed {
+        display: none;
+    }
 }
-@media screen and (max-width: 411px) and (min-width:731px) {
+
+@media screen and (min-width: 823px) and (max-width: 1368px) {
+    .hamIcon {
+        display: none;
+        
+    }
+
 }
-@media screen and (min-width: 731px) and (max-width: 823px) {
-}
-@media screen and (min-width: 823px) and (max-width: 1125px) {
-}*/
 
 
